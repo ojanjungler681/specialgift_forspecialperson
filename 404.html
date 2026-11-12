@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#b20c68">
+  <meta name="description" content="A little pink surprise for Nazira Nadia Putri.">
+  <meta property="og:title" content="A Surprise for Nazira">
+  <meta property="og:description" content="Tap to open a small collection of moments, music, and wishes.">
+  <meta property="og:type" content="website">
+  <title>A Surprise for Nazira</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="glow glow-a"></span>
+    <span class="glow glow-b"></span>
+    <span class="sparkle s1">✦</span><span class="sparkle s2">✧</span>
+    <span class="sparkle s3">✦</span><span class="sparkle s4">✧</span>
+  </div>
+
+  <main id="app">
+    <section class="page page-intro is-active" data-page="intro" aria-labelledby="intro-title">
+      <div class="intro-collage" aria-hidden="true">
+        <figure class="mini-photo mini-a"><img src="./assets/photos/nazira-01.jpeg" alt=""></figure>
+        <figure class="mini-photo mini-b"><img src="./assets/photos/nazira-04.jpeg" alt=""></figure>
+        <figure class="mini-photo mini-c"><img src="./assets/photos/nazira-03.jpeg" alt=""></figure>
+        <span class="rose rose-a">🌹</span><span class="rose rose-b">🌸</span>
+        <span class="butterfly">❦</span>
+      </div>
+
+      <div class="envelope-stage">
+        <p class="eyebrow">A little something for</p>
+        <h1 id="intro-title">Nazira Nadia Putri</h1>
+        <div class="envelope" aria-hidden="true">
+          <div class="envelope-back"></div>
+          <div class="letter-preview">
+            <span>Happy Birthday</span>
+            <small>for Nazira</small>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="wax-seal">N</div>
+        </div>
+        <button class="tap-button" type="button" data-open-surprise>
+          <span>Tap for Surprise</span><i aria-hidden="true">↓</i>
+        </button>
+        <p class="sound-hint">Turn your sound on ♫</p>
+      </div>
+    </section>
+
+    <section class="page page-menu" data-page="menu" aria-labelledby="menu-title">
+      <header class="menu-heading">
+        <p class="eyebrow">There are four little doors</p>
+        <h2 id="menu-title">Choose the Surprise</h2>
+        <p>Pick anything first—there is no wrong order.</p>
+      </header>
+      <div class="surprise-grid">
+        <button class="surprise-card" data-target="journey" type="button">
+          <span class="icon-scene camera-icon" aria-hidden="true"><i></i></span>
+          <strong>Journey</strong><small>little chapters</small>
+        </button>
+        <button class="surprise-card" data-target="moments" type="button">
+          <span class="icon-scene clock-icon" aria-hidden="true"><i></i></span>
+          <strong>Moments</strong><small>frames worth keeping</small>
+        </button>
+        <button class="surprise-card" data-target="playlist" type="button">
+          <span class="icon-scene record-icon" aria-hidden="true"><i></i></span>
+          <strong>Playlist</strong><small>one song, one mood</small>
+        </button>
+        <button class="surprise-card" data-target="gift" type="button">
+          <span class="icon-scene gift-icon" aria-hidden="true"><i></i></span>
+          <strong>Gift</strong><small>a note for you</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="page detail-page" data-page="journey" aria-labelledby="journey-title">
+      <button class="back-button" data-back type="button">← Back</button>
+      <div class="detail-heading">
+        <p class="eyebrow">Chapter by chapter</p>
+        <h2 id="journey-title">Nazira's Little Journey</h2>
+        <p>Different days, different colors, still the same warm light.</p>
+      </div>
+      <div class="journey-track">
+        <article class="journey-item"><img src="./assets/photos/nazira-03.jpeg" alt="Nazira in a blue uniform"><div><span>01</span><h3>Brave beginnings</h3><p>For every day you chose to show up and keep moving.</p></div></article>
+        <article class="journey-item"><img src="./assets/photos/nazira-04.jpeg" alt="Nazira at a warmly lit café"><div><span>02</span><h3>Soft afternoons</h3><p>For the quiet moments that somehow become unforgettable.</p></div></article>
+        <article class="journey-item"><img src="./assets/photos/nazira-07.jpeg" alt="Nazira beneath white flowers"><div><span>03</span><h3>Golden evenings</h3><p>For finding beauty in places that others may pass by.</p></div></article>
+        <article class="journey-item"><img src="./assets/photos/nazira-08.jpeg" alt="Nazira holding a pink plush"><div><span>04</span><h3>Being yourself</h3><p>For the playful, honest side that makes every story yours.</p></div></article>
+      </div>
+    </section>
+
+    <section class="page detail-page" data-page="moments" aria-labelledby="moments-title">
+      <button class="back-button" data-back type="button">← Back</button>
+      <div class="detail-heading compact">
+        <p class="eyebrow">A pocket-sized gallery</p>
+        <h2 id="moments-title">Moments in Pink</h2>
+        <p>Tap a photograph to see it closer.</p>
+      </div>
+      <div class="polaroid-wall">
+        <button class="polaroid tilt-left" data-photo="./assets/photos/nazira-01.jpeg" type="button"><img src="./assets/photos/nazira-01.jpeg" alt="Portrait of Nazira"><span>lovely light</span></button>
+        <button class="polaroid tilt-right" data-photo="./assets/photos/nazira-05.jpeg" type="button"><img src="./assets/photos/nazira-05.jpeg" alt="Nazira sitting at a café"><span>café glow</span></button>
+        <button class="polaroid tilt-left" data-photo="./assets/photos/nazira-06.jpeg" type="button"><img src="./assets/photos/nazira-06.jpeg" alt="Nazira under white flowers"><span>night bloom</span></button>
+        <button class="polaroid tilt-right" data-photo="./assets/photos/nazira-02.jpeg" type="button"><img src="./assets/photos/nazira-02.jpeg" alt="Portrait of Nazira in brown hijab"><span>sweet pause</span></button>
+        <button class="polaroid tilt-left" data-photo="./assets/photos/nazira-09.jpeg" type="button"><img src="./assets/photos/nazira-09.jpeg" alt="A collage of Nazira"><span>six smiles</span></button>
+        <button class="polaroid tilt-right" data-photo="./assets/photos/nazira-10.jpeg" type="button"><img src="./assets/photos/nazira-10.jpeg" alt="Nazira in a flower garden"><span>golden garden</span></button>
+      </div>
+    </section>
+
+    <section class="page detail-page" data-page="playlist" aria-labelledby="playlist-title">
+      <button class="back-button" data-back type="button">← Back</button>
+      <div class="playlist-layout">
+        <div class="player-card">
+          <div class="youtube-frame">
+            <iframe src="https://www.youtube.com/embed/FFamEq1PilQ?rel=0" title="Mac Miller - Cinderella official video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="track-info">
+            <div><span>Now playing</span><h2 id="playlist-title">Cinderella</h2><p>Mac Miller feat. Ty Dolla $ign</p></div>
+            <button class="round-control" data-music-toggle type="button" aria-label="Play or pause music">Ⅱ</button>
+          </div>
+          <a class="youtube-link" href="https://www.youtube.com/watch?v=FFamEq1PilQ" target="_blank" rel="noreferrer">Open official video on YouTube ↗</a>
+        </div>
+        <div class="playlist-decor" aria-hidden="true">
+          <div class="large-record"><i></i></div>
+          <div class="photo-frame frame-one"><img src="./assets/photos/nazira-04.jpeg" alt=""></div>
+          <div class="photo-frame frame-two"><img src="./assets/photos/nazira-08.jpeg" alt=""></div>
+          <div class="neon-notes">♫ ♪ ♫</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page detail-page gift-page" data-page="gift" aria-labelledby="gift-title">
+      <button class="back-button" data-back type="button">← Back</button>
+      <div class="gift-layout">
+        <button class="present" data-open-gift type="button" aria-label="Open the gift">
+          <span class="present-lid"></span><span class="present-box"></span><span class="present-ribbon"></span>
+          <small>Tap to open</small>
+        </button>
+        <article class="letter-card" aria-live="polite">
+          <span class="letter-kicker">For someone wonderful</span>
+          <h2 id="gift-title">Dear Nazira,</h2>
+          <p>Semoga di setiap langkahmu selalu ada hal kecil yang membuatmu tersenyum, orang-orang baik yang menemanimu, dan keberanian untuk mengejar apa pun yang kamu inginkan.</p>
+          <p>Terima kasih sudah menjadi dirimu sendiri—hangat, kuat, dan punya caramu sendiri untuk membuat sebuah hari terasa lebih berwarna. Jangan lupa merayakan semua kemajuanmu, termasuk yang hanya kamu sendiri yang tahu.</p>
+          <p>Semoga tahun ini membawa lebih banyak cerita baik, kesempatan baru, dan kebahagiaan yang datang tanpa perlu kamu paksa.</p>
+          <p class="letter-close">Happy birthday, Nazira.<br><strong>Keep shining in your own beautiful way. ♡</strong></p>
+        </article>
+        <div class="portrait-frame"><img src="./assets/photos/nazira-04.jpeg" alt="Nazira Nadia Putri"></div>
+      </div>
+    </section>
+  </main>
+
+  <button class="floating-music" data-music-toggle type="button" aria-label="Play or pause background music"><span>♫</span></button>
+
+  <audio id="background-music" preload="auto" loop playsinline>
+    <source src="./assets/music/cinderella.mp3" type="audio/mpeg">
+  </audio>
+
+  <dialog class="lightbox" aria-label="Photo preview">
+    <button class="lightbox-close" type="button" aria-label="Close photo">×</button>
+    <img src="./assets/photos/nazira-01.jpeg" alt="Selected memory of Nazira">
+  </dialog>
+
+  <div class="confetti-layer" aria-hidden="true"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
