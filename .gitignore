@@ -1,3 +1,11 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+node_modules/
+.vercel/
+dist/
+scripts/
+package.json
+vercel.json
+*.mpeg
+WhatsApp Image 2026-11-12*
